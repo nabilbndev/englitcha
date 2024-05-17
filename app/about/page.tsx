@@ -1,7 +1,7 @@
 import { Info } from "lucide-react"
 
 export default function Page() {
-  return (<main className="py-10 md:py-20 flex flex-col justify-center gap-10 mx-auto max-w-7xl px-5 min-h-screen">
+  return (<main className="py-10 md:py-20 flex flex-col justify-center gap-10 mx-auto max-w-7xl px-5">
     <AboutApp />
   </main>)
 }

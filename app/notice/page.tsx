@@ -5,7 +5,7 @@ interface PageProps { }
 
 const Page = ({ }: PageProps) => {
   return (
-    <div className=" py-10 md:py-20 flex flex-col justify-center gap-10 mx-auto max-w-7xl px-5 min-h-screen">
+    <div className=" py-10 md:py-20 flex flex-col justify-center gap-10 mx-auto max-w-7xl px-5">
       <div className=" flex items-center gap-3 justify-center">
         <Paperclip size={25} />
         <h1 className=" font-bold text-xl md:text-2xl">  Notice</h1>
