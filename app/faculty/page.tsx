@@ -8,8 +8,9 @@ const Page = ({ }: PageProps) => {
   return (
     <div className=" py-10 md:py-20 flex flex-col  items-center gap-10 mx-auto max-w-7xl px-5">
       <div className=" flex items-center gap-3 justify-center">
-        <GraduationCap size={25} />
-        <h1 className=" font-bold text-xl md:text-2xl">Faculty</h1>
+        <span className=" flex md:hidden"> <GraduationCap size={30} /></span>
+        <span className=" hidden md:flex"> <GraduationCap size={50} /></span>
+        <h1 className=" font-bold text-2xl md:text-4xl">Faculty</h1>
       </div>
       <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 place-content-center">
         {profileWidgets}

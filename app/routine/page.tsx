@@ -8,8 +8,9 @@ const Page = ({ }: PageProps) => {
   return (
     <div className="py-10 md:py-20 flex flex-col justify-center gap-10 mx-auto max-w-7xl px-5">
       <div className=" flex items-center gap-3 justify-center">
-        <Sheet size={25} />
-        <h1 className=" font-bold text-xl md:text-2xl">Routine</h1>
+        <span className=" flex md:hidden"> <Sheet size={30} /></span>
+        <span className=" hidden md:flex"> <Sheet size={40} /></span>
+        <h1 className=" font-bold text-2xl md:text-4xl">Routine</h1>
       </div>
       <div className=" flex flex-col md:flex-row gap-8">
         <div className=" flex flex-col gap-8 w-full md:w-1/2">
@@ -34,9 +35,9 @@ function RoutineCard({ title, downloadUrl, date }: any) {
       <p className="text-xs">Published on: {date}</p>
     </div>
     <div className=" flex items-center gap-5">
-      <Link href={downloadUrl}><div className="flex flex-col items-center"><DownloadIcon size={20} /><p className=" text-xs">Download</p></div></Link>
+      <Link href={downloadUrl}><div className="flex flex-col items-center"><DownloadIcon size={15} /><p className=" text-xs">Download</p></div></Link>
       <div className=" flex flex-col items-center">
-        <EyeIcon size={20} />
+        <EyeIcon size={15} />
         <p className=" text-xs">View</p>
       </div>
     </div>

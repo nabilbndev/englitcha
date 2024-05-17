@@ -9,8 +9,9 @@ const Page = ({ }: PageProps) => {
   return (
     <div className="py-10 md:py-20 flex flex-col justify-center gap-8 mx-auto max-w-7xl px-5">
       <div className=" flex items-center gap-3 justify-center">
-        <LibraryBigIcon size={25} />
-        <h1 className=" font-bold text-xl md:text-2xl">Syllabus</h1>
+        <span className=" flex md:hidden"> <LibraryBigIcon size={30} /></span>
+        <span className=" hidden md:flex"> <LibraryBigIcon size={40} /></span>
+        <h1 className=" font-bold text-2xl md:text-4xl">Syllabus</h1>
       </div>
       <div className=" flex flex-col gap-5 w-full">
         {syllabusWidgets}
@@ -29,9 +30,9 @@ function SyllabusCard({ title, downloadUrl, date }: any) {
       <p className="text-xs">Published on: {date}</p>
     </div>
     <div className=" flex items-center gap-5">
-      <Link href={downloadUrl}><div className="flex flex-col items-center"><DownloadIcon size={20} /><p className=" text-xs">Download</p></div></Link>
+      <Link href={downloadUrl}><div className="flex flex-col items-center"><DownloadIcon size={15} /><p className=" text-xs">Download</p></div></Link>
       <div className=" flex flex-col items-center">
-        <EyeIcon size={20} />
+        <EyeIcon size={15} />
         <p className=" text-xs">View</p>
       </div>
     </div>
