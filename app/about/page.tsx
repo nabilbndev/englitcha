@@ -1,18 +1,20 @@
+import { Info } from "lucide-react"
 
 export default function Page() {
-  return (<main className="py-5 flex flex-col gap-8 mx-auto max-w-7xl px-5 min-h-screen">
+  return (<main className="py-10 md:py-20 flex flex-col justify-center gap-10 mx-auto max-w-7xl px-5 min-h-screen">
     <AboutApp />
   </main>)
 }
 
 
 function AboutApp() {
-  return (<div className="py-5 flex flex-col gap-5 max-w-7xl">
-    <h1 className="text-center text-2xl md:text-3xl font-bold py-0 md:py-5">
-      About Englitcha
-    </h1>
+  return (<div className="flex flex-col gap-5">
+    <div className=" flex items-center gap-3">
+      <Info size={25} />
+      <h1 className=" font-bold text-xl md:text-2xl text-center">About</h1>
+    </div>
     <h1 className=" text-xl md:text-2xl font-semibold">
-      &#34;An info-hub for AHC&apos;s Department of English Language and Literature.&#34;</h1>
+      &#34;Englitcha: an information hub for AHC&apos;s Department of English Language and Literature.&#34;</h1>
     <p className="text-sm md:text-base">Englitcha is a web and mobile application designed to serve the Department of English Language and Literature at Govt. Azizul Haque College, Bogura. The platform aims to provide a centralized and organized space for department-related information, including notices, news, routines, syllabuses, and updates.</p>
     <div className=" flex flex-col gap-5">
       <p className=" text-base md:text-xl font-semibold"> Key Features:</p>
