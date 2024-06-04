@@ -1,4 +1,3 @@
-import Advert from "./_components/homepage/Advert";
 import Hero from "./_components/homepage/Hero";
 import Support from "./_components/homepage/Support";
 import Time from "./_components/homepage/Time";
@@ -10,7 +9,7 @@ export default function Home() {
       <Hero />
       <Time />
       <Support />
-      <Advert />
+      {/* <Advert /> */}
     </main>
   );
 }
