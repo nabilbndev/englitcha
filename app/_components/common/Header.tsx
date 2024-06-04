@@ -1,5 +1,6 @@
 'use client'
 import Hamburger from 'hamburger-react';
+import Link from 'next/link';
 import { useState } from 'react';
 import { animated, useSpring } from 'react-spring';
 import EnglitchaLogo from './engiltcha_logo';
@@ -34,6 +35,6 @@ export default function Header() {
 
 const menuItemsData = [{ id: 0, title: 'About', url: '/about' }, { id: 1, title: 'Faculty', url: '/faculty' }, { id: 2, title: 'Syllabus', url: '/syllabus' }, { id: 3, title: 'Routine', url: '/routine' }, { id: 4, title: 'Notice', url: '/notice' }];
 
-const menuItems = menuItemsData.map((item) => (<a className=' shadow-md md:shadow-none rounded-sm md:rounded-none text-sm md:text-base p-2 md:p-0 ' key={item.id} href={item.url}>{item.title}</a>))
+const menuItems = menuItemsData.map((item) => (<Link className=' shadow-md md:shadow-none rounded-sm md:rounded-none text-sm md:text-base p-2 md:p-0 ' key={item.id} href={item.url}>{item.title}</Link>))
 
 
